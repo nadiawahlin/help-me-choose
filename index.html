@@ -12,9 +12,38 @@
         <input placeholder="Something"></input>
       </div>
       <div class="configureAdd">
-      <button class="addOption">+</button>
+      <button class="addOption">Add</button>
     </div>
     </div>
+    <div class="resultSection"></div>
     <button class="goOption">Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+        $('.addOption').click(add_option)
+      })
+    </script>
+
+    <script>
+    $(function(){
+
+      var colors = ['red', 'blue', 'green', 'grey'];
+
+      $('.h1').click(function()) {
+        var randColor;
+        do {
+          randColor = colors[Math.floor(Math.random() * colors.lenght())];
+        } while (color = randColor);
+        $('body').css('background-color', randColor);
+        color = randColor;
+      }
+    })
+    </script>
   </body>
 </html>
